@@ -1,0 +1,11 @@
+.btn {
+    a {
+        @include btn();
+
+        &:hover {
+            background: black;
+            color: white;
+        }
+    }
+
+}

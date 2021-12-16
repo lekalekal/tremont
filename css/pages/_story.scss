@@ -1,0 +1,47 @@
+.story{
+    width: 70%;
+    margin: 0 auto;
+    line-height: 34px;
+}
+.content{
+    margin: 0 0 150px 0;
+    .left-content, .right-content{
+        width: 60%;
+        @include flex(column, $just-cont:center ,$align:center)
+    }
+    text-align: center;
+    @include flex();
+    .center-content{
+        padding: 0 20%;
+        @include flex(column);
+        h2{
+            font-family: Ambroise;
+            font-weight: lighter;
+            font-size: 56px;
+            line-height: 76px;
+        }
+        p{
+            text-align: left;
+        }
+        .btn{
+            padding-top: 20%;
+        }
+    }
+}
+hr {
+    width: 85%;
+    height: 1px;
+    background-color: lightgray;
+    border: none;
+}
+
+
+ul li:nth-child(2n+1){
+padding-bottom: 36px;
+}
+
+.head-block{
+    width: 100%;
+    height: 100vh;
+    background: url("../assets/img/Stocksy_comp_543118.jpg") no-repeat center/cover;
+}

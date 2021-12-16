@@ -1,0 +1,16 @@
+@mixin flex($direction:row, $just-cont:flex-start, $align:stretch, $wrap:no-wrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $just-cont;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+@mixin btn($txt:uppercase, $color:black,$bg:transparent,$border:1px solid black,$radius:5px) {
+    text-transform: $txt;
+    color: $color;
+    background: $bg;
+    border: $border;
+    border-radius: $radius;
+    padding: 13px 26px;
+}

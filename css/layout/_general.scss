@@ -1,0 +1,61 @@
+body {
+    font-family: Caluna;
+    animation: transitionIn .5s;
+}
+
+a {
+    text-decoration: none;
+    color: $linkColors;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+        list-style: none;
+        
+        &:first-child {
+            font-weight: bold;
+        }
+    }
+}
+
+.header {
+    height: 100%;
+    width: 100%;
+}
+
+.title-container {
+    @include flex($just-cont:center, $align:center);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.205);
+    transition: all .3s ease-in-out;
+    .page-title {
+        color: white;
+        font-size: 6em;
+        font-weight: 300;
+        font-family: Ambroise;
+        text-transform: uppercase;
+    }
+}
+
+.transition {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s ease-in-out;
+}
+.transition.active {
+    z-index: 3;
+    opacity: 1;
+    transition: 1s ease-in-out;
+    pointer-events: all;
+}

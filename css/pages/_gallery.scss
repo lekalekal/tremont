@@ -1,0 +1,56 @@
+.gallery {
+    @include flex($wrap:wrap);
+
+    div {
+        flex-grow: 1;
+
+        &:nth-child(1) {
+            flex-basis: 35%;
+            height: 75vh;
+            background: url('../assets/img/15_I_FavaShucking_v2-135.jpg') no-repeat center/cover;
+        }
+        
+        &:nth-child(2) {
+            flex-basis: 65%;
+            background: url('../assets/img/Stocksy_comp_821143-crop.jpg') no-repeat center/cover;
+        }
+        
+        &:nth-child(3) {
+            flex-basis: 55%;
+            height: 100vh;
+            background: url('../assets/img/65_AP_Gougeres_v2-127.jpg') no-repeat center/cover;
+        }
+        &:nth-child(4) {
+            flex-basis: 45%;
+            background: url('../assets/img/Juice_RockNRolla.jpg') no-repeat center/cover;
+        }
+        &:nth-child(5) {
+            flex-basis: 100%;
+            height: 100vh;
+            background: url('../assets/img/Stocksy_comp_476031-darker.jpg') no-repeat center/cover;
+        }
+        
+        &:nth-child(6) {
+            flex-basis: 55%;
+            height: 110vh;
+            background: url('../assets/img/2_2_HBL_BeurreCompose_v11-116.jpg') no-repeat center/cover;
+        }
+        
+        &:nth-child(7) {
+            flex-basis: 45%;
+            background: url('../assets/img/P_038.jpg') no-repeat center/cover;
+        }
+        
+        &:nth-child(8) {
+            flex-basis: 100%;
+            height: 100vh;
+            background: url('../assets/img/Stocksy_comp_865498.jpg') no-repeat center/cover;
+        }
+        
+        &:nth-child(9) {
+            flex-basis: 100%;
+            height: 200vh;
+            background: url('../assets/img/54_E_Cassoulette_v1-331.jpg') no-repeat center/cover;
+        }
+    }
+}
